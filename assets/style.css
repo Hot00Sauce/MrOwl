@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+body {
+    background-image: url("Forestnight.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -1; 
+}
+
+.option-for-simple-and-hex-mode {
+    text-align: center;
+    background-color: rgb(28, 26, 26);
+    height: 80px;
+    padding-top: 10px;
+}
+
+.Title {
+    margin-top: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.background-image img{
+    z-index: 10px;
+
+}
+/* Fixing the margins. */
+.house-about-to-be-paint p span {
+    margin-top: 200px;
+    font-size: 200px;
+    margin-left: 580px;
+}
+
+
+/* Fixing the margins. */
+.transparent-bg {
+    min-height: 290px;
+    min-width: 380px;
+    position: absolute;
+    margin: 150px 0 0 560px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.195);
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.208);
+    filter: blur(5px);
+}
+
+.object-and-subject {
+    position: relative;
+}
+
+/* Fixing the margins. */
+.owl-image img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 305px; 
+    right: 635px; 
+    z-index: 20px;
+}
+
+.brush-button i {
+    font-size: 50px;
+    margin-top: 8px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.brush-button {
+    background-color: rgb(33, 139, 225);
+    width: 100px;
+    margin-left: 775px;
+    margin-top: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
+
+.brush-button:hover {
+    background-color: rgb(6, 59, 92);
+    color: white;
+}
+
+.background-button2 span {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.background-button2 {
+    background-color: rgb(63, 237, 124);
+    width: 100px;
+    margin-left: 630px;
+    margin-top: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+}
+
+.background-button2:hover {
+    background-color: rgb(39, 83, 54);
+    color: white;
+}
+@keyframes popUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fixing the margins. */
+.bubble-chat {
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    position: absolute;
+    top: 260px;
+    right: 470px;
+    background-color: rgb(0, 0, 0); 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pop-up {
+    animation: popUpAnimation 0.5s ease-out;
+    visibility: visible !important;
+}
+
+/* microsoft browser screen */
+@media(max-width: 1490px) {
+    .transparent-bg {
+        min-height: 230px;
+        min-width: 320px;
+        margin: 150px 0 0 585px;
+    }
+    .house-about-to-be-paint p span {
+        margin-top: 180px;
+        font-size: 170px;
+        margin-left: 600px;
+    }
+    .owl-image img {
+        max-height: 85px;
+        max-width: 85px;
+        top: 270px; 
+        right: 610px; 
+    }
+    .bubble-chat {
+        font-size: 12px;
+        width: 150px;
+        top: 260px;
+        right: 450px;
+    }
+    .brush-button {
+        background-color: rgb(33, 139, 225);
+        max-width: 85px;
+        margin-left: 755px;
+        margin-top: 40px;
+    }
+    .background-button2 {
+        max-width: 85px;
+        margin-left: 640px;
+        margin-top: 40px;
+    }
+    .brush-button i {
+        font-size: 35px;
+    }
+    .background-button2 span {
+        font-size: 25px;
+    }
+}
+/* firefox browser screen */
+@media(max-width: 1300px) {
+    .transparent-bg {
+        min-height: 230px;
+        min-width: 320px;
+        margin: 150px 0 0 470px;
+    }
+    .house-about-to-be-paint p span {
+        margin-top: 180px;
+        font-size: 170px;
+        margin-left: 490px;
+    }
+    .owl-image img {
+        max-height: 85px;
+        max-width: 85px;
+        top: 270px; 
+        right: 520px; 
+    }
+    .bubble-chat {
+        font-size: 12px;
+        width: 150px;
+        top: 260px;
+        right: 360px;
+    }
+    .brush-button {
+        background-color: rgb(33, 139, 225);
+        max-width: 85px;
+        margin-left: 625px;
+        margin-top: 40px;
+    }
+    .background-button2 {
+        max-width: 85px;
+        margin-left: 520px;
+        margin-top: 40px;
+    }
+    .brush-button i {
+        font-size: 35px;
+    }
+    .background-button2 span {
+        font-size: 25px;
+    }
+}
